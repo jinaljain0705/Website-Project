@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+body{
+    background-color: ;
+    color: ;
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    line-height: ;
+}
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var();
+    padding-right: var();
+}
