@@ -22,3 +22,175 @@
     --lh: 22px;
     --gw: 15px;
 }
+body{
+    background-color: var(--white);
+    color: var(--text-color);
+    font-family: var(--description-font);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    line-height: var(--lh);
+}
+a{
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul,ol {
+    padding-left: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title-font);
+}
+h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gw));
+    margin-right: calc(-1 * var(--gw));
+}
+.col-1 {
+    width: 8.3333%;
+}
+.col-2 {
+    width: 16.6666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.3333%;
+}
+.col-5 {
+    width: 41.6666%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.3333%;
+}
+.col-8 {
+    width: 66.6666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.3333%;
+}
+.col-11 {
+    width: 91.6666%;
+}
+.col-12 {
+    width: 100%;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.col-gap-10{
+    column-gap: 10px;
+}
+.row-gap-10{
+    row-gap: 10px;
+}
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+  
+/* about section */  
+.about img{
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.its-time-img{
+    width: 96%;
+}
+  
+.menu h4{
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+  
+.menu h2{
+    text-align: center;
+}
+  
+.menu-item{
+    background-color: #FFFBF1;
+    padding: 50px;
+}
+  
+.menu-item-image{
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.menu-item-image::before{
+    content: url(../Images/onion-4.png);
+    position: absolute;
+    bottom: 8px;
+    left: 7px;
+    z-index: -1;
+    transform: scale(0);
+    transition: all 180ms ease-in-out;
+    transition-delay: .02s;
+}
+.menu-item-image::after{
+    content: url(../Images/pizza-shape.png);
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: -1;
+    transform: scale(0);
+    transition: all 180ms ease-in-out;
+    transition-delay: .02s;}
+.menu-item:hover .menu-item-image::before{
+    transform: scale(1);
+}
+.menu-item:hover .menu-item-image::after{
+    transform: scale(1);
+}
