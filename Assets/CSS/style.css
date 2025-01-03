@@ -96,7 +96,7 @@ a{
     vertical-align: middle;
 }
 .main-menu{
-    display: inline;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
