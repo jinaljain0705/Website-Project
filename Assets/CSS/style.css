@@ -23,7 +23,6 @@
 body{
     background-color:white ;
     color: #7A7A7A;
-    font-family: url('./fonts.css') 
     font-size : 16px;
     font-weight : 400;
     line-height : 22px;
@@ -68,6 +67,16 @@ body{
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
     padding-left: var(--gw);
     padding-right: var(--gw);
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
 } 
 .container{
     max-width: 1320px;
@@ -82,13 +91,9 @@ body{
     margin-left: calc(-1 * var(--gw));
     margin-right: calc(-1 * var(--gw));
 }
-.header{
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 100;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
+.logo{
+    height: 218px;
+    width: 600px;
+    border: 0;
+    vertical-align: middle;
 }
