@@ -75,6 +75,8 @@ a{
     position: relative;
     margin: auto;
     z-index: 100;
+    text-align: center;
+    padding: 20px;
     transition: all 0.3s ease-in-out;
     background-color: #ffffff;
 } 
@@ -99,6 +101,12 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+nav{
+    margin-top: 10px;
+    font-weight: bold; 
+    display: inline; 
+    margin-right: 15px; 
 }
 .header nav > ul{
     flex-direction: row; 
@@ -132,7 +140,7 @@ a{
     overflow: hidden;
 }
 .dropdown:hover .dropdown-menu{
-    display: inline; 
+    display: inline;
 }
 .dropdown > a:hover{
     color: #dd3939;
