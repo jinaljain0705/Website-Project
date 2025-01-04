@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .dropdown-menu a:hover{
     background-color: white;
-    color: yellow;
+    color: rgb(206, 206, 20);
 }
 .phone{
     display: flex; 
@@ -185,6 +185,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     gap: 10px; 
     margin-top: 10px;
+    color: black;
 }
 .phone img{
     width: 49px; 
@@ -200,18 +201,18 @@ h1, h2, h3, h4, h5, h6{
     font-size: 16px; 
     font-family: sans-serif; 
     font-weight: 650;
-    color: var(--primary-color-400); 
+    color: black; 
 }
 .number{
     margin: 0; 
     cursor: pointer;
 }
-.call p{
+.phone p{
     margin: 0; 
     font-size: 16px; 
     font-family: sans-serif; 
     font-weight: 800;
-    color: black; 
+    color: red; 
 }
 .cart{
     display: flex; 
@@ -219,6 +220,7 @@ h1, h2, h3, h4, h5, h6{
     align-items: center;
     gap: 10px; 
     margin-top: 5px;
+    color: black;
 }
 .cart img{
     width: 49px; 
@@ -231,6 +233,7 @@ h1, h2, h3, h4, h5, h6{
     gap: 10px; 
     margin-top: 4px;
     cursor: pointer;
+    color: black;
 }
 .search img{
     width: 45px; 
