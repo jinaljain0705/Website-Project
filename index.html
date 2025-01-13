@@ -14,20 +14,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header>
-    <!-- Main Header -->
-<div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="logo">
-                        <img src="./Assets/Images/logo/logo-dark.png" alt="dark-logo">
-                    </div>
+    <header>
+        <!-- Main Header -->
+        <div class="container">
+            <div class="header-menu">
+                <!-- Logo Section -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="./Assets/Images/logo/logo-dark.png" alt="Panpie Pizza Restaurant Logo">
+                    </a>
                 </div>
-            </div>
-        <div class="main-menu">
-            <div class="col-4">
-                <nav>
-                    <ul>
+
+                <!-- Navigation Menu -->
+                <nav class="main-menu">    
+                    <ul class="menu-list">
                         <li class="dropdown">
                             <a href="#">HOME</a>
                             <ul class="dropdown-menu">
@@ -53,9 +53,9 @@
                         </li>
                         <li class="dropdown">
                             <a href="#">MENU</a>
-                            <ul  class="dropdown-menu">
+                            <ul class="dropdown-menu">
                                 <li>
-                                <a href="#">Food Menu 01</a> 
+                                    <a href="#">Food Menu 01</a>
                                 </li>
                                 <li>
                                     <a href="#">Food Menu 02</a>
@@ -69,8 +69,7 @@
                                 <li>
                                     <a href="#">Food Menu 05</a>
                                 </li>
-                                <li>
-                                    <a href="#">Food Menu 06</a>
+                                <li><a href="#">Food Menu 06</a>
                                 </li>
                             </ul>
                         </li>
@@ -78,7 +77,7 @@
                             <a href="#">PAGES</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Pages</a>
+                                    <a href="#">About Us</a>
                                 </li>
                                 <li>
                                     <a href="#">Gallery Page</a>
@@ -122,31 +121,36 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown-list">
+                        <li>
                             <a href="#">CONTACT</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
-        <div class="col-4">
-            <div class="phone">
-                <i class="fa-solid fa-phone-volume"></i>
-                <div class="text">
-                    <span>HOT LINE:</span>
-                    <p class="number">+304-779-645</p>
-                </div>
-                <div class="Cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                <!-- Contact Section -->
+                <div class="contact-info">
+                    <div class="phone">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div class="text">
+                            <span>HOT LINE:</span>
+                            <p class="number">+304-779-645</p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="#" class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</header>  
+    </header>
     <main></main>
     <footer></footer>
 </body>
 </html>
+
+
