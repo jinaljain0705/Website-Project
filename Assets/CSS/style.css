@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--title-font);
     font-weight: 400;
 }
+
 /* Main Header */
 .container{
     width: 1320px;
@@ -56,13 +57,6 @@ h1, h2, h3, h4, h5, h6{
     padding-left: var(--gw);
     padding-right: var(--gw);
     position: relative;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--gw));
-    margin-right: calc(-1 * var(--gw));
-    align-items: center;
 }
 .col-1{
     width: 8.3333%;
@@ -116,10 +110,17 @@ h1, h2, h3, h4, h5, h6{
 .justify-end{
     justify-content: flex-end;
 }
+.col-gap-10{
+    column-gap: 10px;
+}
+.row-gap-10{
+    row-gap: 10px;
+}
 .py-120{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .logo{
     height: 50px;
     weight: 100px;
@@ -133,40 +134,33 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
-
 header .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .header-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .logo img {
     height: 50px;
     width: auto;
 }
-
 .main-menu {
     display: flex;
     align-items: center;
     list-style-type: none;
 }
-
 .main-menu .menu-list {
     display: flex;
     margin-left: 30px;
 }
-
 .main-menu .menu-list > li {
     position: relative;
 }
-
 .main-menu a {
     text-decoration: none;
     color: #333;
@@ -174,12 +168,10 @@ header .container {
     font-weight: 700;
     transition: background-color 0.3s;
 }
-
 .main-menu a:hover {
     background-color: #f4a261;
     color: #fff;
 }
-
 .main-menu .dropdown-menu {
     display: none;
     position: absolute;
@@ -189,54 +181,130 @@ header .container {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     list-style-type: none;
     padding: 10px 0;
+    width: 190px;
 }
-
 .main-menu .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 .main-menu .dropdown-menu li a {
     padding: 10px 20px;
-    font-weight: 400;
+    font-weight: 400;   
 }
-
 .main-menu .dropdown-menu li a:hover {
     background-color: #f4a261;
     color: #fff;
 }
+
 /* Contact */
 .contact-info {
     display: flex;
     align-items: center;
 }
-
 .contact-info .phone {
     display: flex;
     align-items: center;
     margin-right: 30px;
 }
-
 .contact-info .phone i {
     font-size: 24px;
     color: black;
 }
-
 .contact-info .phone .text {
     margin-left: 10px;
 }
-
 .contact-info .phone .text .number {
     font-weight: 700;
     color: red;
 }
-
 .contact-info .icons a {
     margin-left: 20px;
     font-size: 22px;
     color: #333;
     transition: color 0.3s;
 }
-
 .contact-info .icons a:hover {
     color: #f4a261;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    z-index: 0;
+}
+/* section{
+    
+} */
+
+.discription{
+    position: relative;
+    top: -600px;
+}
+.banner-text{
+    position: relative;
+    top: 100px;
+}
+.text{
+    
+}
+.discription{
+    
+}
+
+/* about section */
+.about img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.its-time-img{
+    width: 96%;
+}
+
+.menu h4{
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.menu h2{
+    text-align: center;
+}
+
+.menu-item{
+    background-color: #FFFBF1;
+    padding: 50px;
+}
+
+.menu-item-image{
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.menu-item-image::before{
+    content: url(../Images/onion-4.png);
+    position: absolute;
+    bottom: 8px;
+    left: 7px;
+    z-index: -1;
+    transform: scale(0);
+    transition: all 180ms ease-in-out;
+    transition-delay: .02s;
+}
+.menu-item-image::after{
+    content: url(../Images/pizza-shape.png);
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    z-index: -1;
+    transform: scale(0);
+    transition: all 180ms ease-in-out;
+    transition-delay: .02s;
+}
+.menu-item:hover .menu-item-image::before{
+    transform: scale(1);
+}
+.menu-item:hover .menu-item-image::after{
+    transform: scale(1);
 }
