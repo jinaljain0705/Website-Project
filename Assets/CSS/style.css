@@ -162,7 +162,12 @@ h6 {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-
+.pt-120 {
+    padding-top: 120px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -299,7 +304,10 @@ nav ul li a {
 .offer-img img {
     width: 100%;
 }
-
+.menu .container .row:first-child{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 .menu h4 {
     text-align: center;
     color: var(--primary-color);
@@ -377,7 +385,6 @@ nav ul li a {
 /* categories */
 .categories {
     text-align: center;
-    align-items: center;
     margin-top: -20px;
     z-index: 1;
     padding-bottom: 120px;
@@ -386,7 +393,7 @@ nav ul li a {
 .categories a {
     color: var(--white);
     font-family: 'Barlow';
-    font-size: 60px;
+    font-size: 30px;
     font-style: italic;
     z-index: 2;
 }
@@ -396,9 +403,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 430px;
-    height: 450px;
-    padding-top: 155px;
+    padding: 75px;
 }
 
 .category-2 {
@@ -406,9 +411,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 430px;
-    height: 450px;
-    padding-top: 155px;
+    padding: 75px;
 }
 
 .category-3 {
@@ -416,9 +419,7 @@ nav ul li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 430px;
-    height: 450px;
-    padding-top: 155px;
+    padding: 75px;
 }
 
 .category-1:hover,
@@ -428,10 +429,6 @@ nav ul li a {
 }
 
 /* brands */
-.brands {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
 
 .since1786 {
     transition-duration: 0.5s;
@@ -477,7 +474,9 @@ nav ul li a {
     opacity: 0.5;
     transition-duration: 0.5s;
 }
-
+.brand-item img{
+    margin: 0 auto;
+}
 /* footer */
 footer {
     background-color: #1a1a1a;
