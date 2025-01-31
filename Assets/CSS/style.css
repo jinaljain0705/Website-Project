@@ -239,6 +239,38 @@ nav ul li a {
     font-weight: 700;
     color: var(--primary-color);
 }
+/* dropdown-menu */
+.dropdown-menu{
+    display: none;
+    position: absolute; 
+    background-color: white;
+    box-shadow: 20%;
+    padding: 5px;
+    z-index: 99; 
+}
+.dropdown-menu a{
+    display: block;
+    padding: 5px 10px; 
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+    overflow: hidden; 
+}
+.dropdown > a{
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+.dropdown:hover .dropdown-menu{
+    display: block; 
+}
+.dropdown > a:hover{
+    color: #e60000;
+}
+.dropdown-menu a:hover{
+    background-color: white;
+    color: yellow;
+}
 
 /* banner */
 .banner {
