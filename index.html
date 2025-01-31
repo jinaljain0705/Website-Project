@@ -1,104 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Panpie-Pizza Resturant</title>
-        <link rel="shortcut icon" href="./Assets/Images/Icons/pizza icon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="stylesheet" href="./Assets/CSS/fonts.css">
-        <link rel="stylesheet" href="./Assets/css/style.css">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panpie-Pizza Resturant</title>
+    <link rel="shortcut icon" href="./Assets/Images/Icons/pizza icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/CSS/fonts.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row justify-between items-center">
+                <div class="col-2">
+                    <div class="logo">
+                        <a href="./index2.html">
+                            <img src="./Assets/Images/logo/logo-dark.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <nav>
+                        <ul class="justify-center">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-3">
+                    <div class="contact-detail">
+                        <ul class="justify-end col-gap-30">
+                            <li>
+                                <div class="call">
+                                    <div class="call-icon">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div class="call-detail">
+                                        <p>Hot Line:</p>
+                                        <a href="#">+304-779-645</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- banner -->
+        <section class="banner">
             <div class="container">
-                <div class="row justify-between items-center">
-                    <div class="col-2">
-                        <div class="logo">
-                            <a href="./index2.html">
-                                <img src="./Assets/Images/logo/logo-dark.png" alt="logo">
-                            </a>
+                <div class="row items-center">
+                    <div class="col-5">
+                        <div class="banner-content">
+                            <h1>BIG ITALIAN</h1>
+                            <h2>CHEESE PIZZA</h2>
+                            <p>Additional charge for premium toppings are fixed <br> Minimum of 2 required.
+                            </p>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Order Now</a>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <nav>
-                            <ul class="justify-center">
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pages</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-3">
-                        <div class="contact-detail">
-                            <ul class="justify-end col-gap-30">
-                                <li>
-                                    <div class="call">
-                                        <div class="call-icon">
-                                            <i class="fa-solid fa-phone-volume"></i>
-                                        </div>
-                                        <div class="call-detail">
-                                            <p>Hot Line:</p>
-                                            <a href="#">+304-779-645</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-solid fa-magnifying-glass"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="col-7">
+                        <div class="banner-img">
+                            <img src="./Assets/images/banner/pizza-slice.png" alt="pizza-slice" />
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="banner">
-                <div class="container">
-                    <div class="row items-center">
-                        <div class="col-5">
-                            <div class="banner-content">
-                                <h1>BIG ITALIAN</h1>
-                                <h2>CHEESE PIZZA</h2>
-                                <p>Additional charge for premium toppings are fixed<br>Minimum of 2 required.</p>
-                                <a href="#" class="btn btn-secondary">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    Order Now</a>
-                            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="offer-img row-gap-30">
+                            <img src="./Assets/images/about/cheesy pizza.jpg" alt="cheesy pizza" />
                         </div>
-                        <div class="col-7">
-                            <div class="banner-img">
-                                <img src="./Assets/images/banner/pizza-slice.png" alt="pizza-slice">
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="offer-img">
+                                    <img src="./Assets/images/about/combo & meal.jpg" alt="combo & meal" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="offer-img">
+                                    <img src="./Assets/images/about/yummy pizza.jpg" alt="yummy pizza" />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="offer-img">
+                                    <img src="./Assets/images/about/its time.jpg" alt="its time" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+            </div>
+        </section>
+        <!-- menu -->
+        <section class="menu">
+            <div class="container">
+                <h4>FRESH FROM PANPIE</h4>
+                <h2>We Offer People Best Pizza</h2>
+                <div class="menu-items">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/BBQ Pizza Tin Tin.png" alt="BBQ" />
+                                </div>
+                                <p class="price">$18.00</p>
+                                <p class="item-name">BBQ Pizza TinTin</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/Burger Kingo.png" alt="Burger Kingo" />
+                                </div>
+                                <p class="price">$18.50</p>
+                                <p class="item-name">Burger Kingo</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/chessey pizza.png" alt="chessey pizza" />
+                                </div>
+                                <p class="price">$21.50</p>
+                                <p class="item-name">Chessey Pizza</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/bugger.png" alt="Burgger" />
+                                </div>
+                                <p class="price">$17.00</p>
+                                <p class="item-name">Burgger</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/coke.png" alt="coke" />
+                                </div>
+                                <p class="price">$18.50</p>
+                                <p class="item-name">Coke</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="menu-item">
+                                <div class="menu-item-image">
+                                    <img src="./Assets/images/main menu/wraps.png" alt="wraps" />
+                                </div>
+                                <p class="price">$19.00</p>
+                                <p class="item-name">Wraps</p>
+                                <a href="#" class="btn">
+                                    <i class="fa-solid fa-cart-shopping"></i> View Option
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- excellence -->
+        <section class="excellence">
+            <div class="black-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="excellent">
+                                <img src="./Assets/images/background img/excellent.png" alt="excellent" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="category-1">
+                            <a href="#">Pizza</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="category-2">
+                            <a href="#"> Drinks</a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="category-3">
+                            <a href="#">Burger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands -->
+        <section class="brands">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./Assets/images/main menu/since 1786.png" alt="since 1786" class="since 1786" />
+                    </div>
+                    <div class="col-2">
+                        <img src="./Assets/images/main menu/good food.png" alt="good food" class="good food" />
+                    </div>
+                    <div class="col-2">
+                        <img src="./Assets/images/main menu/premium quality.png" alt="premium quality"
+                            class="premium quality" />
+                    </div>
+                    <div class="col-2">
+                        <img src="./Assets/images/main menu/since 1786.png" alt="since 1786" class="since 1786" />
+                    </div>
+                    <div class="col-2">
+                        <img src="./Assets/images/main menu/grills.png" alt="grills" class="grills" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <img src="./Assets/images/footer img/footer_shape01.png" alt="pizza" class="pizza" />
+        <img src="./Assets/images/footer img/footer_shape02.png" alt="hotdog" class="hotdog" />
+        <img src="./Assets/images/footer img/footer_shape03.png" alt="fries" class="fries" />
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./Assets/images/logo/logo-light.png" alt="logo" class="logo" />
+                    <p>128 6th Ave,New York, NY 10015 United States, Dcca-1212</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>
+                            <a href="#">Hot Menu</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> BBQ Pizza TinTin</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Burger Kingo</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Chessey Pizza</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Chocolate Donuts</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Chicken Sandwich</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>
+                            <a href="#">Opening Hours</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Monday: 10.00am - 05.00pm</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Tuesday: 10.20am - 05.30pm</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Wednesday: 10.30am - 05.50pm</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Thursday: 11.00am - 07.10pm</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-caret-right"></i> Friday:
+                                <span>Closed</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>© 2024 panpie. All Rights Reserved by RadiusTheme</p>
+    </footer>
+</body>
 </html>
